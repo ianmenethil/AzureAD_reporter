@@ -1,6 +1,4 @@
 # Description: main.py contains the main flow all options. File Contents:
-# Add option for checking lass password/credential change date
-# ADd option for MFA status (enabled/disabled) and MFA methods etc
 from pathlib import Path
 import logging
 import typer
