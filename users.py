@@ -1,4 +1,4 @@
-# Description: users.py contains the flow for option 0 from main.py. File Contents:
+# Description: users.py contains the flow for option 0 from main.py. File Contents :
 from pathlib import Path
 import traceback
 from prompt_toolkit import prompt
