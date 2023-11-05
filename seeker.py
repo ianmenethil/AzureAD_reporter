@@ -3,7 +3,7 @@ from pathlib import Path
 import traceback
 from prompt_toolkit import prompt
 import typer
-from common import Choices
+from Common import Choices
 from MG_Graph import GraphAPI
 from FM import FileManager
 

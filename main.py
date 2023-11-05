@@ -10,7 +10,7 @@ from rich.console import Console
 from rich.traceback import install
 from users import execute_order66
 from seeker import execute_seeker
-from common import Choices
+from Common import Choices
 from FM import FileManager
 
 creds_file = 'config/config.yaml'

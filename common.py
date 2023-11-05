@@ -1,4 +1,4 @@
-# Description: common.py contains common classes used in python files. Contents:
+# Description: Common.py contains Common classes used in python files. Contents:
 from prompt_toolkit.key_binding import KeyBindings
 from prompt_toolkit.keys import Keys
 from prompt_toolkit import prompt
@@ -63,7 +63,11 @@ class Choices:
 
     @staticmethod
     def get_job(console):
-        options = [("User sign-in data", 0), ("User Audits[NOT YET IMPLEMENTED]", 1), ("User plans and licenses[NOT YET IMPLEMENTED]", 2)]
+        options = [
+            ("Get User last sign-in data", 0),
+            ("Get Suspicious User Audits[NOT YET IMPLEMENTED]", 1),
+            ("User plans and licenses[NOT YET IMPLEMENTED]", 2),
+            ("Get Password and MFA details[NOT YET IMPLEMENTED]", 2)]
         selected_index = Choices.custom_selection_dialog("Please select what to execute:", options)
         console.print(f"Please select what to execute: Selected option: {options[selected_index][0]}", style="bold blue")
         return selected_index

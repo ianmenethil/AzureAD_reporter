@@ -1,4 +1,4 @@
-# Description: MG_Graph.py contains common classes used in python files. Contents:
+# Description: MG_Graph.py contains Common classes used in python files. Contents:
 import json
 import requests
 

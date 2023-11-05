@@ -1,4 +1,4 @@
-# Description: Logicbomb.py contains common classes used in python files. Contents:
+# Description: Logicbomb.py contains Common classes used in python files. Contents:
 from datetime import datetime
 import pandas as pd
 

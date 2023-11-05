@@ -173,7 +173,7 @@ class FileManager:
     def modify_excel_file(excel_filename, logger):
         wb = load_workbook(excel_filename)
         # Font definitions
-        common_font = Font(name='Open Sans', size=10, color="c8d1d9")
+        Common_font = Font(name='Open Sans', size=10, color="c8d1d9")
         bad_cell_fmt = Font(name='Open Sans', size=10, color="FF0000")
         good_cell_fmt = Font(name='Open Sans', size=10, color="00FF00")
         purple_font = Font(name='Open Sans', size=10, color="800080")
@@ -188,9 +188,9 @@ class FileManager:
         light_lavender_fill = PatternFill(start_color="F4E6FF", end_color="F4E6FF", fill_type="solid")
 
         for sheet in wb.worksheets:
-            for row in sheet.iter_rows(min_row=2):  # Apply common font and alignment, skip header
+            for row in sheet.iter_rows(min_row=2):  # Apply Common font and alignment, skip header
                 for cell in row:
-                    cell.font = common_font
+                    cell.font = Common_font
                     cell.fill = default_fill  # Apply default fill to all cells
                     cell.alignment = alignment
             for cell in sheet['A'][1:]:  # Apply font colors based on column A values, skip header
@@ -222,7 +222,7 @@ class FileManager:
                             cell.fill = light_pink_fill
                     else:
                         cell.value = "NA"
-                        cell.font = common_font
+                        cell.font = Common_font
 
         wb._sheets.append(wb._sheets.pop(1)) # type: ignore  # Move sheet 2 to the last spot
 
