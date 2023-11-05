@@ -1,0 +1,9 @@
+# Supply creds via file, arguments or interactive login
+credentials:
+  tenant_id: ''
+  client_id: ''
+  client_secret: ''
+# Specify app config via file, if not specified, defaults will be used
+app_config:
+  output_dir: 'output'
+  input_dir: 'input'

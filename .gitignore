@@ -1,0 +1,11 @@
+output/
+json-csv-converter.py
+*.txt
+*.json
+*.log
+config.yaml
+__pycache__/
+backup/
+input/
+output/
+logs/
