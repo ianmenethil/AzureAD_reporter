@@ -1,6 +1,5 @@
 output/
 json-csv-converter.py
-*.txt
 *.json
 *.log
 config.yaml
